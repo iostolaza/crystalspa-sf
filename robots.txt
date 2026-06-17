@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+
+Sitemap: https://crystalwellness-sf.com/sitemap.xml

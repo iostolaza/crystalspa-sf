@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New Booking - Crystal Spa</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #F8F5F0; padding: 20px;">
+    <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        
+        <div style="background: #3F3A33; color: white; padding: 25px; text-align: center;">
+            <h2 style="margin: 0;">New Appointment Booked</h2>
+        </div>
+
+        <div style="padding: 30px;">
+            <p><strong>New booking received:</strong></p>
+
+            <table style="width: 100%; margin: 20px 0; border-collapse: collapse; font-size: 15px;">
+                <tr>
+                    <td style="padding: 8px 0; color: #5C6B5E; font-weight: 600; width: 140px;">Client Name</td>
+                    <td style="padding: 8px 0;"><strong>{{name}}</strong></td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0; color: #5C6B5E; font-weight: 600;">Email</td>
+                    <td style="padding: 8px 0;">{{email}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0; color: #5C6B5E; font-weight: 600;">Phone</td>
+                    <td style="padding: 8px 0;">{{phone}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0; color: #5C6B5E; font-weight: 600;">Service</td>
+                    <td style="padding: 8px 0;">{{service}} ({{duration}} min)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0; color: #5C6B5E; font-weight: 600;">Date & Time</td>
+                    <td style="padding: 8px 0;">{{date}} at {{time}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0; color: #5C6B5E; font-weight: 600;">Price</td>
+                    <td style="padding: 8px 0; font-weight: 600; color: #5C6B5E;">${{price}}</td>
+                </tr>
+            </table>
+
+            <p style="margin-top: 30px; font-size: 13px; color: #666;">
+                This booking was made through the website.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
