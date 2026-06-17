@@ -168,7 +168,7 @@
         {
           "@type": "Service",
           "name": "Aromatherapy Immersion",
-          "description": "A guided sensory experience using premium essential oils and breathwork to promote emotional balance and deep calm.",
+          "description": "A guided sensory experience using premium therapeutic botanicals and breathwork to promote emotional balance and deep calm.",
           "provider": {"@id": "https://crystalwellness-sf.com/#business"},
           "areaServed": ["San Francisco", "Bay Area", "California"]
         },
@@ -423,7 +423,7 @@
                         <i class="fa-solid fa-wind text-2xl text-[#5C6B5E]"></i>
                     </div>
                     <h3 class="font-semibold text-2xl tracking-tight mb-3">Aromatherapy Immersion</h3>
-                    <p class="text-[#5A5348] text-sm leading-relaxed line-clamp-3">A deeply sensory experience using premium essential oils and guided breathing to harmonize emotions and promote profound calm.</p>
+                    <p class="text-[#5A5348] text-sm leading-relaxed line-clamp-3">A guided sensory experience using premium therapeutic botanicals and intentional breathwork to harmonize emotions and promote profound calm.</p>
                     <div class="mt-6 flex items-center text-xs font-medium text-[#B8A88A] group-hover:text-[#5C6B5E]">
                         <span>LEARN MORE</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                     </div>
@@ -999,7 +999,7 @@
                 title: 'Aromatherapy Immersion',
                 subtitle: 'Sensory • Emotional Balance • 60–75 min',
                 description: `
-                    <p>A guided sensory journey using high-quality therapeutic-grade essential oils chosen specifically for your emotional and physical state. Through intentional inhalation, topical application (where appropriate), and breathwork, this experience helps regulate the nervous system, reduce mental chatter, and create a lasting sense of emotional equilibrium.</p>
+                    <p>A guided sensory experience using premium therapeutic botanicals and intentional breathwork, specifically chosen for your emotional and physical state. This practice helps regulate the nervous system, reduce mental chatter, and create a lasting sense of emotional equilibrium.</p>
                     <p class="mt-4">Perfect for those seeking relief from anxiety, difficulty sleeping, or simply wanting to reconnect with a sense of inner peace. Many guests report improved mood and mental clarity that lasts for days.</p>
                 `
             },
@@ -1224,10 +1224,13 @@
 
             const serviceWithDuration = `${service} — ${selectedDuration} min`;
 
-            // In production, this would send to TidyCal / Calendly / backend
-            alert(`Thank you, ${name.split(' ')[0]}!\n\nYour booking request:\n\n${serviceWithDuration}\nPrice: $${selectedPrice}\nDate: ${date}\nTime: ${time}\n\nWe will confirm via email shortly.`);
+            // Thank you message
+            alert(`Thank you, ${name.split(' ')[0]}!\n\nYour request for ${serviceWithDuration} on ${date} at ${time} has been noted.\n\nYou will now be redirected to complete your booking.`);
 
             hideBookingModal();
+
+            // Open TidyCal to complete the booking
+            window.open('https://tidycal.com/awsom138', '_blank');
 
             // Reset form
             document.getElementById('service-select').value = '';

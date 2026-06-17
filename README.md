@@ -6,24 +6,30 @@ A modern, clean, and professional single-page wellness website for Crystal Welln
 
 ---
 
-## Deployment & Third-Party Services Setup
+## Deployment & Third-Party Services Setup (Completed - June 2026)
 
-This project uses the following services:
+This project is now fully deployed and connected.
 
 ### Services Used
-| Service          | Purpose                        | Cost              | Recommended Ownership          | Notes |
-|------------------|--------------------------------|-------------------|--------------------------------|-------|
-| **Netlify**      | Website Hosting                | Free              | Keep under developer account   | Connect via GitHub |
-| **GitHub**       | Version Control & Deployment   | Free              | Developer                      | Recommended |
-| **Squarespace Domains** | Custom Domain (`crystalspa-sf.com`) | ~$15–20/year     | Client owns domain             | Update DNS to point to Netlify |
-| **TidyCal**      | Booking System & Notifications | $29 (one-time)    | Client creates account         | Developer added as Admin |
-| **Google Calendar** | Availability sync          | Free              | Client                         | Connected inside TidyCal |
+| Service          | Purpose                              | Status          | Notes |
+|------------------|--------------------------------------|-----------------|-------|
+| **GitHub**       | Version Control & Deployment         | Connected       | Main repo for the site |
+| **Netlify**      | Website Hosting + SSL                | Live            | Auto-deploys from GitHub `main` branch |
+| **Squarespace**  | Domain (`crystalspa-sf.com`)         | Configured      | DNS records updated (CNAME + Forwarding) |
+| **TidyCal**      | Booking System & Notifications       | Connected       | `https://tidycal.com/awsom138` |
 
-### Recommended Account Setup
-- **Domain**: Client creates and owns it. Developer is added as Admin for DNS configuration.
-- **TidyCal**: Client creates the account using their email. Developer is added as **Admin** for the first year.
-- **Netlify**: Developer keeps the project under their account. Client can be added as a team member later if needed (requires Pro plan).
-- **GitHub**: Developer manages the repository.
+### Completed Setup Steps
+1. **GitHub** — Code pushed and connected to Netlify.
+2. **Netlify** — Site deployed at `crystalspa-sf.netlify.app`.
+3. **Squarespace DNS** — Added CNAME for `www` pointing to Netlify + domain forwarding from root to `www`.
+4. **TidyCal** — Booking system live and linked in the site.
+
+> **Note on DNS**: DNS configuration was completed in Squarespace to point the domain to Netlify. No sensitive records were exposed.
+
+### Recommended Ongoing Ownership
+- **Domain (Squarespace)**: Keep under client ownership.
+- **TidyCal**: Client owns the account (developer added as admin if needed).
+- **Netlify + GitHub**: Developer manages for now; can transfer later.
 
 ### JavaScript Note
 All JavaScript is currently kept inside `index.html`. For a simple static site like this, it is acceptable. For larger projects, it is better to move JavaScript into separate `.js` files.
@@ -83,10 +89,10 @@ This site uses **TidyCal** for appointment booking.
 
 ## Files Included
 
-- `index.html` – Main website
-- `book.html` – Standalone booking page example
+- `index.html` – Main website (fully updated)
 - `robots.txt` & `sitemap.xml` – SEO files
 - `DEPLOYMENT.md` – Deployment instructions
+- `README.md` – This file (updated with full deployment steps)
 
 ---
 
