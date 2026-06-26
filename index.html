@@ -973,12 +973,9 @@
                 </div>
             </div>
             
-            <div class="bg-[#F8F5F0] px-8 py-5 flex items-center justify-between text-sm">
+            <div class="bg-[#F8F5F0] px-8 py-5 flex items-center justify-between gap-3 text-sm">
                 <button onclick="hideServiceModal()" class="font-medium text-[#5A5348]">Close</button>
-                <a id="modal-book-btn" href="#" 
-                   class="px-6 py-2.5 bg-[#5C6B5E] hover:bg-[#3F4A40] text-white rounded-full text-xs font-semibold tracking-wider transition-colors">
-                    Book this experience
-                </a>
+                <div id="modal-book-actions" class="flex flex-wrap justify-end gap-2"></div>
             </div>
         </div>
     </div>
@@ -1125,7 +1122,7 @@
                 icon: '<i class="fa-solid fa-mug-hot"></i>',
                 title: 'Hot Towels & Packs',
                 subtitle: 'Soothing Warmth • Circulation',
-                bookingUrl: 'https://tidycal.com/awsom138/hottowelspacks',
+                bookingUrl: 'https://tidycal.com/awsom138/hottowelpacks',
                 description: `
                     <p>Indulge in deep relaxation with our therapeutic hot towel and pack treatments. Perfect for soothing sore muscles, improving circulation, and melting away tension after a long day.</p>
                     <p class="mt-4"><strong>Options &amp; Pricing:</strong><br>1 Hour — $95<br>30 Minutes — $75</p>
@@ -1145,7 +1142,7 @@
                 icon: '<i class="fa-solid fa-feather"></i>',
                 title: 'Waxing Services',
                 subtitle: 'Smooth • Long-Lasting',
-                bookingUrl: 'https://tidycal.com/awsom138/waxing',
+                bookingUrl: 'https://tidycal.com/awsom138/waxingservices',
                 description: `
                     <p>Professional waxing for smooth, long-lasting results. We use high-quality, gentle products suitable for all skin types.</p>
                     <p class="mt-4"><strong>Pricing:</strong> $75 and up<br><span class="text-[#5A5348]">Price varies by area — full details available upon consultation.</span></p>
@@ -1155,7 +1152,10 @@
                 icon: '<i class="fa-solid fa-leaf"></i>',
                 title: 'Aroma Facial Sense',
                 subtitle: 'Aroma Therapy • Skin Rejuvenation',
-                bookingUrl: 'https://tidycal.com/awsom138/aromafacialsense',
+                bookingOptions: [
+                    { label: 'Book — 🌹 Roses', url: 'https://tidycal.com/awsom138/aromafacialsenseroses' },
+                    { label: 'Book — 💜 Lavender', url: 'https://tidycal.com/awsom138/aromafacialsenselavender' }
+                ],
                 description: `
                     <p>Experience ultimate relaxation and skin rejuvenation with our signature Aroma Facial. Infused with pure essential oils, this treatment nourishes the skin, reduces stress, and leaves you glowing.</p>
                     <p class="mt-4"><strong>Signature Scents:</strong><br>🌹 Roses — calming &amp; romantic<br>💜 Lavender — soothing &amp; balancing</p>
@@ -1175,10 +1175,22 @@
             document.getElementById('modal-subtitle').textContent = service.subtitle;
             document.getElementById('modal-description').innerHTML = service.description;
 
-            // Update the footer booking button with the correct URL
-            const bookBtn = document.getElementById('modal-book-btn');
-            if (bookBtn && service.bookingUrl) {
-                bookBtn.href = service.bookingUrl;
+            // Build the footer booking button(s). Supports a single bookingUrl
+            // or multiple bookingOptions (e.g. scent variations).
+            const bookActions = document.getElementById('modal-book-actions');
+            if (bookActions) {
+                bookActions.innerHTML = '';
+                const options = service.bookingOptions
+                    || (service.bookingUrl ? [{ label: 'Book this experience', url: service.bookingUrl }] : []);
+                options.forEach(opt => {
+                    const link = document.createElement('a');
+                    link.href = opt.url;
+                    link.target = '_blank';
+                    link.rel = 'noopener';
+                    link.className = 'px-6 py-2.5 bg-[#5C6B5E] hover:bg-[#3F4A40] text-white rounded-full text-xs font-semibold tracking-wider transition-colors';
+                    link.textContent = opt.label;
+                    bookActions.appendChild(link);
+                });
             }
             
             modal.classList.remove('hidden');
