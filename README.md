@@ -139,7 +139,7 @@ This site uses **TidyCal** for appointment booking.
 
 ---
 
-**Created for Crystal Wellness • San Francisco, CA**  
-Recommended domain: `crystalwellness-sf.com`
+**Created for Crystal Spa • San Francisco, CA**  
+Primary domain: `https://www.crystalspa-sf.com/`
 
 *Last updated: June 2026*

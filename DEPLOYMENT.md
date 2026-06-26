@@ -20,9 +20,9 @@ Netlify is the simplest and most professional way to host this site.
 4. Netlify will deploy your site instantly and give you a free URL like:
    `https://crystal-wellness-abc123.netlify.app`
 
-### Connecting a Custom Domain (crystalwellness-sf.com)
+### Connecting a Custom Domain (crystalspa-sf.com)
 1. In Netlify, go to **Site settings → Domain management → Add custom domain**.
-2. Enter `crystalwellness-sf.com` and follow the DNS instructions (usually just add a CNAME record at your domain registrar).
+2. Enter `crystalspa-sf.com` and follow the DNS instructions (usually just add a CNAME record at your domain registrar).
 
 ### Contact Form on Netlify (Easiest Option)
 Netlify has built-in form handling — no extra services needed.
@@ -55,15 +55,15 @@ This is the simplest method.
 If you prefer using GitHub:
 
 ### Steps:
-1. Create a new repository on GitHub (name it `crystalwellness-sf` or similar).
+1. Create a new repository on GitHub (name it `crystalspa-sf` or similar).
 2. Upload the `index.html`, `robots.txt`, and `sitemap.xml` files to the repository.
 3. Go to **Settings → Pages**.
 4. Under "Source", select **Deploy from a branch** → `main` branch → `/ (root)` folder.
 5. Click **Save**. GitHub will publish your site at:
-   `https://yourusername.github.io/crystalwellness-sf`
+   `https://yourusername.github.io/crystalspa-sf`
 
 ### Custom Domain on GitHub Pages
-You can also connect `crystalwellness-sf.com` in the repository settings.
+You can also connect `crystalspa-sf.com` in the repository settings.
 
 **Note on Forms:** GitHub Pages does **not** support forms natively. You will need to use Formspree or another service.
 
@@ -76,7 +76,7 @@ You can host this site on almost any web hosting provider.
 ### Steps:
 1. Upload the `index.html` file (and optionally `robots.txt` + `sitemap.xml`) to the `public_html` or `www` folder via FTP or File Manager.
 2. Make sure the file is named `index.html`.
-3. Point your domain `crystalwellness-sf.com` to the hosting account.
+3. Point your domain `crystalspa-sf.com` to the hosting account.
 
 ### Contact Form on Traditional Hosting
 You have two main options:
@@ -114,8 +114,8 @@ All submissions will be sent to your email.
 
 - [ ] Test the website on mobile and desktop
 - [ ] Test the contact form
-- [ ] Submit your sitemap to Google Search Console: `https://crystalwellness-sf.com/sitemap.xml`
-- [ ] Add your real photos (replace picsum placeholders)
+- [ ] Submit your sitemap to Google Search Console: `https://crystalspa-sf.com/sitemap.xml`
+- [ ] Add your real photos (replace the stock Unsplash images in the "Our Sanctuary" gallery)
 - [ ] Update phone, address, and hours if needed
 - [ ] Set up Google Analytics (optional but recommended)
 

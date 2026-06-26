@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary SEO Meta Tags -->
-    <title>Crystal Spa San Francisco | Relaxation Rituals, Aromatherapy &amp; Stress Relief Experiences</title>
-    <meta name="description" content="Professional wellness sanctuary in San Francisco offering aromatherapy immersions, hot stone relaxation rituals, crystal energy work, and mindfulness sessions to help you destress and restore balance. Fully compliant with certified practitioners. Book your free consultation.">
-    <meta name="keywords" content="wellness spa san francisco, aromatherapy san francisco, hot stone therapy sf, crystal wellness, relaxation rituals san francisco, stress relief san francisco, destress san francisco, mindfulness san francisco, certified wellness practitioners">
+    <title>Crystal Spa San Francisco | Aromatherapy Facials, Waxing &amp; Relaxation Rituals</title>
+    <meta name="description" content="Crystal Spa is a professional wellness sanctuary in San Francisco offering aromatherapy facials, hot towel &amp; pack treatments, waxing, cellulite contouring, crystal rituals, heat therapy, and mindfulness sessions. Certified practitioners in a private, judgment-free space. Book your free consultation.">
+    <meta name="keywords" content="spa san francisco, aromatherapy facial san francisco, waxing san francisco, cellulite contouring san francisco, hot towel treatment san francisco, facial treatment sf, crystal wellness, relaxation rituals san francisco, stress relief san francisco, mindfulness san francisco, certified wellness practitioners">
     <meta name="author" content="Crystal Spa">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://crystalwellness-sf.com/">
+    <link rel="canonical" href="https://www.crystalspa-sf.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/green-crystal.png">
+    <link rel="apple-touch-icon" href="/images/green-crystal.png">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://crystalwellness-sf.com/">
+    <meta property="og:url" content="https://www.crystalspa-sf.com/">
     <meta property="og:title" content="Crystal Spa San Francisco | Professional Relaxation &amp; Wellness Experiences">
-    <meta property="og:description" content="Experience profound calm at our San Francisco wellness sanctuary. Aromatherapy, hot stone rituals, crystal energy work, and mindfulness sessions by certified practitioners. Fully compliant and judgment-free.">
-    <meta property="og:image" content="https://picsum.photos/id/1018/1200/630">
+    <meta property="og:description" content="Experience profound calm at our San Francisco wellness sanctuary. Aromatherapy facials, waxing, hot towel treatments, crystal rituals, and mindfulness sessions by certified practitioners. Fully compliant and judgment-free.">
+    <meta property="og:image" content="https://www.crystalspa-sf.com/images/House-moonlight.jpg">
+    <meta property="og:image:alt" content="Crystal Spa San Francisco — moonlit sanctuary">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Crystal Spa">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Crystal Spa San Francisco | Aromatherapy &amp; Relaxation Rituals">
-    <meta name="twitter:description" content="Professional wellness experiences in SF: aromatherapy immersions, hot stone rituals, crystal therapy &amp; mindfulness. Certified practitioners. Free consultation available.">
-    <meta name="twitter:image" content="https://picsum.photos/id/1018/1200/630">
+    <meta name="twitter:title" content="Crystal Spa San Francisco | Aromatherapy Facials, Waxing &amp; Relaxation Rituals">
+    <meta name="twitter:description" content="Professional wellness experiences in SF: aromatherapy facials, waxing, hot towel treatments, crystal rituals &amp; mindfulness. Certified practitioners. Free consultation available.">
+    <meta name="twitter:image" content="https://www.crystalspa-sf.com/images/House-moonlight.jpg">
     
     <!-- Geo / Local SEO -->
     <meta name="geo.region" content="US-CA">
@@ -134,11 +139,18 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "LocalBusiness",
-          "@id": "https://crystalwellness-sf.com/#business",
+          "@type": "WebSite",
+          "@id": "https://www.crystalspa-sf.com/#website",
+          "url": "https://www.crystalspa-sf.com/",
+          "name": "Crystal Spa San Francisco",
+          "publisher": {"@id": "https://www.crystalspa-sf.com/#business"}
+        },
+        {
+          "@type": ["DaySpa", "HealthAndBeautyBusiness", "LocalBusiness"],
+          "@id": "https://www.crystalspa-sf.com/#business",
           "name": "Crystal Spa",
-          "description": "Professional wellness sanctuary in San Francisco offering aromatherapy, warmth relaxation rituals, crystal energy work, heat therapy, and mindfulness sessions.",
-          "url": "https://crystalwellness-sf.com/",
+          "description": "Professional wellness sanctuary in San Francisco offering aromatherapy facials, hot towel & pack treatments, waxing, cellulite contouring, crystal rituals, heat therapy, and mindfulness sessions.",
+          "url": "https://www.crystalspa-sf.com/",
           "telephone": "+1-415-400-4332",
           "address": {
             "@type": "PostalAddress",
@@ -157,34 +169,57 @@
             {
               "@type": "OpeningHoursSpecification",
               "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-              "opens": "10:00",
-              "closes": "20:00"
+              "opens": "09:00",
+              "closes": "23:59"
             }
           ],
           "priceRange": "$$",
-          "image": "https://picsum.photos/id/1018/1200/630",
-          "sameAs": []
+          "image": "https://www.crystalspa-sf.com/images/House-moonlight.jpg",
+          "areaServed": ["San Francisco", "Belmont", "Burlingame", "San Carlos", "Hercules", "San Lorenzo", "Albany", "Alamo Square", "Bay Area", "California"],
+          "sameAs": [],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Wellness Experiences",
+            "itemListElement": [
+              {"@type": "Offer", "priceCurrency": "USD", "price": "75", "itemOffered": {"@type": "Service", "name": "Aromatherapy Immersion", "description": "A guided sensory experience using premium therapeutic botanicals and intentional breathwork to harmonize emotions and promote profound calm."}},
+              {"@type": "Offer", "priceCurrency": "USD", "price": "75", "itemOffered": {"@type": "Service", "name": "Warmth Relaxation Ritual", "description": "Gentle therapeutic warmth applied with care to release tension and guide the body into a deeply restorative state."}},
+              {"@type": "Offer", "priceCurrency": "USD", "price": "75", "itemOffered": {"@type": "Service", "name": "Warmth & Comfort Heat Therapy", "description": "Therapeutic heat application using specialized pads to improve circulation, soothe discomfort, and support relaxation."}},
+              {"@type": "Offer", "priceCurrency": "USD", "price": "75", "itemOffered": {"@type": "Service", "name": "Rejuvenating Crystal Ritual", "description": "A luxurious exfoliating treatment using fine mineral crystals and nourishing botanicals for soft, radiant, renewed skin."}},
+              {"@type": "Offer", "priceCurrency": "USD", "price": "95", "itemOffered": {"@type": "Service", "name": "Mindfulness & Stress Relief Session", "description": "Guided mindfulness, breathwork, and supportive techniques to release mental tension and cultivate lasting inner peace."}},
+              {"@type": "Offer", "priceCurrency": "USD", "price": "75", "itemOffered": {"@type": "Service", "name": "Crystal Energy & Warm Towel Ritual", "description": "Warmed aromatic towels and intentional crystal placement to balance energy centers and invite deep rest."}},
+              {"@type": "Offer", "priceCurrency": "USD", "price": "95", "itemOffered": {"@type": "Service", "name": "Facial Treatment", "description": "A customized facial using gentle techniques and nourishing botanicals to refresh and revitalize the skin."}},
+              {"@type": "Offer", "priceCurrency": "USD", "price": "75", "itemOffered": {"@type": "Service", "name": "Hot Towels & Packs", "description": "Therapeutic hot towel and pack treatments to soothe sore muscles, improve circulation, and melt away tension."}},
+              {"@type": "Offer", "priceCurrency": "USD", "price": "95", "itemOffered": {"@type": "Service", "name": "Cellulite Contouring", "description": "Specialized firming and smoothing treatment to improve skin texture, reduce dimpling, and promote a toned silhouette."}},
+              {"@type": "Offer", "priceCurrency": "USD", "price": "75", "itemOffered": {"@type": "Service", "name": "Waxing Services", "description": "Professional waxing for smooth, long-lasting results using high-quality, gentle products suitable for all skin types."}},
+              {"@type": "Offer", "priceCurrency": "USD", "price": "95", "itemOffered": {"@type": "Service", "name": "Aroma Facial Sense", "description": "Signature aroma facial infused with pure essential oils (Roses or Lavender) to nourish skin, reduce stress, and leave you glowing."}}
+            ]
+          }
         },
         {
-          "@type": "Service",
-          "name": "Aromatherapy Immersion",
-          "description": "A guided sensory experience using premium therapeutic botanicals and breathwork to promote emotional balance and deep calm.",
-          "provider": {"@id": "https://crystalwellness-sf.com/#business"},
-          "areaServed": ["San Francisco", "Bay Area", "California"]
-        },
-        {
-          "@type": "Service",
-          "name": "Hot Stone Relaxation Ritual",
-          "description": "Warmed natural stones placed along energy centers to deliver penetrating warmth and induce a meditative state of relaxation.",
-          "provider": {"@id": "https://crystalwellness-sf.com/#business"},
-          "areaServed": ["San Francisco", "Bay Area", "California"]
-        },
-        {
-          "@type": "Service",
-          "name": "Crystal Energy & Warm Towel Ritual",
-          "description": "A restorative ritual combining crystal placement and warmed aromatic towels for energetic balance and deep rest.",
-          "provider": {"@id": "https://crystalwellness-sf.com/#business"},
-          "areaServed": ["San Francisco", "Bay Area", "California"]
+          "@type": "FAQPage",
+          "@id": "https://www.crystalspa-sf.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What should I expect during my first visit?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Your first visit begins with a brief, private consultation where we discuss your goals for relaxation and any preferences. We then guide you through your chosen experience in a calm, private setting. Sessions typically last 60-90 minutes, and you will leave feeling centered and refreshed."}
+            },
+            {
+              "@type": "Question",
+              "name": "What should I wear to my appointment?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Comfortable, loose clothing is recommended. For most experiences you will remain fully clothed. For treatments such as the crystal polish ritual, you will be provided with appropriate draping and privacy at all times."}
+            },
+            {
+              "@type": "Question",
+              "name": "Are your practitioners certified?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Yes. All practitioners at Crystal Spa hold current certifications in their respective modalities (aromatherapy, energy work, and relaxation facilitation) and we maintain full compliance with all applicable San Francisco and California regulations."}
+            },
+            {
+              "@type": "Question",
+              "name": "How do I book or get a free consultation?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Simply call us at (415) 400-4332 or use the contact form on our website. We offer free consultations to discuss which experience best fits your needs and answer any questions before booking."}
+            }
+          ]
         }
       ]
     }
@@ -218,7 +253,7 @@
                 </div>
 
                 <div class="hidden md:flex items-center gap-x-4">
-                    <a href="tel:4158293760" 
+                    <a href="tel:4154004332" 
                        class="flex items-center gap-x-2 px-4 py-2 text-sm font-medium text-[#5C6B5E] hover:bg-[#F0EDE5] rounded-full transition-colors">
                         <i class="fa-solid fa-phone text-xs"></i>
                         <span>(415) 400-4332</span>
@@ -262,7 +297,7 @@
     <header class="relative h-[92vh] min-h-[620px] flex items-center justify-center overflow-hidden">
         <!-- Background -->
         <div class="absolute inset-0 bg-cover bg-center" 
-             style="background-image: linear-gradient(rgba(63, 58, 51, 0.45), rgba(63, 58, 51, 0.35)), url('https://picsum.photos/id/1018/2000/1200')">
+             style="background-image: linear-gradient(rgba(63, 58, 51, 0.55), rgba(63, 58, 51, 0.45)), url('images/House-moonlight.jpg')">
         </div>
         
         <div class="relative max-w-screen-xl mx-auto px-6 text-center text-white">
@@ -289,7 +324,7 @@
                         <i class="fa-solid fa-arrow-right group-hover:translate-x-0.5 transition-transform"></i>
                     </a>
                     
-                    <a href="tel:4158293760" 
+                    <a href="tel:4154004332" 
                        class="inline-flex items-center justify-center gap-x-3 px-8 py-4 border border-white/70 hover:bg-white/10 text-white font-medium rounded-full text-base transition-all">
                         <i class="fa-solid fa-phone"></i>
                         <span>Call (415) 400-4332</span>
@@ -577,7 +612,7 @@
                 <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800" onclick="showImageModal(this.src, this.alt)" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500 cursor-pointer" alt="Lush tropical valley">
             </div>
             <div class="aspect-[4/3] overflow-hidden rounded-2xl shadow-md">
-                <img src="images/house-moonlight.jpg" onclick="showImageModal(this.src, this.alt)" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500 cursor-pointer" alt="Moonlit hot tub sanctuary by the ocean">
+                <img src="images/House-moonlight.jpg" onclick="showImageModal(this.src, this.alt)" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500 cursor-pointer" alt="Crystal Spa San Francisco moonlit hot tub sanctuary by the ocean">
             </div>
         </div>
     </section>
@@ -686,7 +721,7 @@
                                 </div>
                                 <div>
                                     <div class="font-medium text-[#5C6B5E] mb-1">Phone</div>
-                                    <a href="tel:4158293760" class="text-lg font-semibold hover:underline">(415) 400-4332</a>
+                                    <a href="tel:4154004332" class="text-lg font-semibold hover:underline">(415) 400-4332</a>
                                 </div>
                             </div>
                         </div>
@@ -789,7 +824,7 @@
             <p class="mt-3 max-w-md mx-auto text-white/80">Call us today or request your free consultation. We’re here to help you find your calm.</p>
             
             <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="tel:4158293760" class="inline-flex items-center justify-center gap-x-3 px-10 py-4 bg-white text-[#3F3A33] font-semibold rounded-full hover:bg-[#F8F5F0]">
+                <a href="tel:4154004332" class="inline-flex items-center justify-center gap-x-3 px-10 py-4 bg-white text-[#3F3A33] font-semibold rounded-full hover:bg-[#F8F5F0]">
                     <i class="fa-solid fa-phone"></i>
                     <span>Call (415) 400-4332</span>
                 </a>
@@ -826,7 +861,7 @@
                     <div>
                         <div class="font-medium text-white mb-3 tracking-wider">CONTACT</div>
                         <div class="space-y-[7px]">
-                            <a href="tel:4158293760" class="block hover:text-white">(415) 400-4332</a>
+                            <a href="tel:4154004332" class="block hover:text-white">(415) 400-4332</a>
                             <a href="#contact" class="block hover:text-white">Book Consultation</a>
                             <span class="block">577 Geary St, SF, CA 94102</span>
                         </div>
